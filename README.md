@@ -65,7 +65,7 @@
         <p>This is the main page of the website. Use the navigation menu to explore subpages.</p>
     </main>
     <footer>
-        &copy; 2024 My Website. All Rights Reserved.
+        &copy; 2024 . All Rights Reserved.
     </footer>
 </body>
 </html>
