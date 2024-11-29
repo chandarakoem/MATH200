@@ -51,7 +51,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to Business Calculus</h1>
     </header>
     <nav>
         <ul>
