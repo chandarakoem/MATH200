@@ -3,26 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - My Website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Use external CSS file if desired -->
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #343a40;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>About Us</h1>
+        <h1>Contact Us</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>About Our Website</h2>
-        <p>This page provides information about our website and team.</p>
-    </main>
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <form action="/submit" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            
+            <input type="submit" value="Send Message">
+        </form>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> contact@example.com</p>
+            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+        </div>
+    </div>
     <footer>
-        &copy; 2024 My Website. All Rights Reserved.
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
